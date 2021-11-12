@@ -80,6 +80,22 @@ python run_gen.py --model_path fnlp/bart-base-chinese \
 
 结果见note2。
 
+---
+作者说了，对于生成任务，用了3个数据集。
+
+ADGEN用BLEU-4评估。
+
+LCSTS和CSL用Rouge-L评估。
+
+所以我要看看Rouge-L的评估办法。
+
+代码里面说，每次迭代的时候用ROUGE评估。
+
+100个样本训练和测试的结果：
+
+{'rouge-1': 12.175381268603642, 'rouge-2': 0.5882352448096926, 'rouge-l': 12.175381268603642}
+
+文中base模型在LCSTS的Rouge-L的值是38.2
 
 ---
 
