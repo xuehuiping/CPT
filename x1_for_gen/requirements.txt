@@ -1,0 +1,4 @@
+nltk
+transformers
+datasets
+rouge
