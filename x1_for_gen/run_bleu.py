@@ -27,5 +27,10 @@ for idx in sorted(idxs):
     lines = [line.split(' ') for line in lines]
     metric.hyps = lines
     metric.refs = labels
+    # 如果是少量的样本进行评估，可以打印看看结果
+    for label, predict in zip(labels, lines):
+        print('label: ' + ''.join(label[0]))
+        print('predict: ' + ''.join(predict))
+        print()
     scores.append(metric.calc_bleu_k(4))
 print(sum(scores) / len(scores))
