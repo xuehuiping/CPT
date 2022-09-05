@@ -110,3 +110,18 @@ loading file https://huggingface.co/fnlp/bart-base-chinese/resolve/main/tokenize
 loading file https://huggingface.co/fnlp/bart-base-chinese/resolve/main/tokenizer.json from cache at None
 loading configuration file https://huggingface.co/fnlp/bart-base-chinese/resolve/main/config.json from cache at /Users/xuehuiping/.cache/huggingface/transformers/e0ab1af8221a3166de9abfc42b6eb4275cfe6ee6ee31a99937350dfae50cc659.b46ea2f32c0c0a3eb762ff2b81ebfe0a058025072aa60e54714633acdd9ca36e
 loading weights file https://huggingface.co/fnlp/bart-base-chinese/resolve/main/pytorch_model.bin from cache at /Users/xuehuiping/.cache/huggingface/transformers/9032bba23e7bf4f5ef19608e2158df5ceb26f362b42e2b8cf5b07ea175f1c1e9.2251c3a1e4e718fc7d03740d3283002a38b4fb4b94f6f2461c49426385adc6dc
+
+---
+2021-11-13 09:52:35
+
+在007机器运行较多的数据，lcsts的全部数据
+
+总样本数： 2400591
+训练集个数： 1920473
+测试集个数： 240059
+验证集个数： 240059
+
+(CPT) xuehp@haomeiya007:~/git/CPT/x1_for_gen$ nohup python run_gen.py  --epoch 50000 &
+[1] 2672
+
+100个数据集，运行了一夜，没得到比较好的结果。分析一下吧

@@ -23,7 +23,7 @@ from modeling_cpt import CPTModel, CPTForConditionalGeneration
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model_path", default='fnlp/bart-base-chinese', type=str)
-parser.add_argument("--dataset", default="lcsts", type=str)
+parser.add_argument("--dataset", default="csl", type=str)
 parser.add_argument("--lr", default=2e-5, type=float)
 parser.add_argument("--batch_size", default='50', type=str)
 parser.add_argument("--epoch", default='5', type=str)

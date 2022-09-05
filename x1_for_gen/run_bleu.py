@@ -7,7 +7,7 @@ from bleu_metric import Metric
 arch = 'output'
 tokenizer = BertTokenizer.from_pretrained('fnlp/bart-base-chinese')
 dataset = 'adgen'
-dataset = 'lcsts'
+# dataset = 'lcsts'
 test_set = load_json('demo_data/SUMMARY.{}/test.json'.format(dataset))
 
 labels = []

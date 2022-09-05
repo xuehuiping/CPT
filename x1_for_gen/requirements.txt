@@ -1,3 +1,5 @@
+jupyter
+torch
 nltk
 transformers
 datasets
